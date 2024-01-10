@@ -1,25 +1,76 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-      <meta http-equiv="Content‐Type" content="text/html" charset="UTF-8"
-/>
-    <link href="/css/index.css" th:href="@{/css/index.css}" rel="stylesheet"></link>
-      <title>AIRS index demo</title>
+ <meta http‐equiv="Content‐Type" content="text/html" charset="UTF-8" />
+ <link href="/css/flow.css" th:href="@{/css/flow.css}" rel="stylesheet"></link>
+<title>Insert title here</title>
 </head>
 <body>
-<div class="main">
-    <header class="menu">
-    <h1 class="title"><img src="https://github.com/okazu-paru/airs_flow.github.io/blob/main/AIRS.png?raw=true"
-height="45"></h1>
-    <ul class="navi">
-     <li class="navi_item"><a target="mainPage"
-class="navi_item_link" href="/contents"><img
-src="https://github.com/okazu-paru/airs_flow.github.io/blob/main/home.png?raw=true"></a>
-     </li>
-    </ul>
-    </header>
-    <iframe class="contents_main" src="" name="mainPage"
-frameborder="0"></iframe>
-</div>
+<script src="/js/flow.js"></script>
+
+<liclass="flow-sub">
+<a th:href=""http://airs2.sie.dendai.ac.jp/airs/db1/db1-0/a/index.html"" onclick= ""setCookie2('1', 'true', 24*3600);""><span>1章概要</span><script>var visitCount= getCookie;(1)var backgroundColor = determineBackgroundColor(visitCount);
+         document.currentScript.parentElement.style.backgroundColor = backgroundColor;
+         
+         function determineBackgroundColor(visitCount) {
+                      
+             if (visitCount!==0) {
+                 return 'rgb(73, 215, 73)';
+             } else {
+                 return 'rgb(73, 215, 255)';
+             }
+         }　 </script></a>
+<a th:href=""http://airs2.sie.dendai.ac.jp/airs/db1/db1-1/b/index.html"" onclick= ""setCookie2('2', 'true', 24*3600);""><span>データベース</span>
+      <script>var visitCount= getCookie;(2)var backgroundColor = determineBackgroundColor(visitCount);
+         document.currentScript.parentElement.style.backgroundColor = backgroundColor;
+         
+         function determineBackgroundColor(visitCount) {
+                      
+             if (visitCount!==0) {
+                 return 'rgb(73, 215, 73)';
+             } else {
+                 return 'rgb(73, 215, 255)';
+             }
+         }　 </script></a>
+<a th:href=""http://airs2.sie.dendai.ac.jp/airs/db1/db1-1/b/index.html"" onclick= ""setCookie2('3', 'true', 24*3600);""><span>データベース</span><script>var visitCount= getCookie;(3)var backgroundColor = determineBackgroundColor(visitCount);
+         document.currentScript.parentElement.style.backgroundColor = backgroundColor;
+         
+         function determineBackgroundColor(visitCount) {
+                      
+             if (visitCount!==0) {
+                 return 'rgb(73, 215, 73)';
+             } else {
+                 return 'rgb(73, 215, 255)';
+             }
+         }　 </script></a>
+<a th:href=""http://airs2.sie.dendai.ac.jp/airs/db1/db1-2/b/index.html"" onclick= ""setCookie2('4', 'true', 24*3600);""><span>3層スキーマ</span><script>var visitCount= getCookie;(4)var backgroundColor = determineBackgroundColor(visitCount);
+         document.currentScript.parentElement.style.backgroundColor = backgroundColor;
+         
+         function determineBackgroundColor(visitCount) {
+                      
+             if (visitCount!==0) {
+                 return 'rgb(73, 215, 73)';
+             } else {
+                 return 'rgb(73, 215, 255)';
+             }
+         }　 </script></a>
+<a th:href=""http://airs2.sie.dendai.ac.jp/airs/db1/db1-4/b/index.html"" onclick= ""setCookie2('5', 'true', 24*3600);""><span>データの機密保護</span><script>var visitCount= getCookie;(5)var backgroundColor = determineBackgroundColor(visitCount);
+         document.currentScript.parentElement.style.backgroundColor = backgroundColor;
+         
+         function determineBackgroundColor(visitCount) {
+                      
+             if (visitCount!==0) {
+                 return 'rgb(73, 215, 73)';
+             } else {
+                 return 'rgb(73, 215, 255)';
+             }
+         }　 </script></a>
+
+</li>
+
+<script>
+deleteTriangle();
+</script>
+
 </body>
 </html>
