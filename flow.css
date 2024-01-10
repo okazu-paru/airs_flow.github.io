@@ -68,3 +68,8 @@ a.navi_item_link > img {
 	width: 35px;
 	height: 35px;
 }
+
+iframe.contents_main{
+	width: 100%;
+	height: 1000px;
+}
