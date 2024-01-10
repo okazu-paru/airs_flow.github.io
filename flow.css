@@ -15,6 +15,7 @@ body{
 }
 
 .flow-sub a{
+	background: rgb(73, 215, 255);
     height: 100%;
     width: 100%;
     color: #fefff7;
