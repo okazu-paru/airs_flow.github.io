@@ -28,7 +28,7 @@ body{
     margin: 20;
 }
 
-.flow-sub a:hover{
+.flow-sub:hover a{
 -webkit-transition: all 0.6s ease;
 	transition: all 0.6s ease;
 	background-color: rgba(255, 255, 255, 0.4);
