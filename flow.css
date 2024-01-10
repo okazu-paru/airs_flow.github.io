@@ -15,7 +15,6 @@ body{
 }
 
 .flow-sub a{
-	background: rgb(73, 215, 255);
     height: 100%;
     width: 100%;
     color: #fefff7;
@@ -28,7 +27,7 @@ body{
     margin: 20;
 }
 
-.flow-sub:hover a{
+.flow-sub a:hover{
 -webkit-transition: all 0.6s ease;
 	transition: all 0.6s ease;
 	background-color: rgba(255, 255, 255, 0.4);
