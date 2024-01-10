@@ -1,0 +1,62 @@
+body{
+	margin: 0;
+}
+
+.flow-sub {
+	background: rgb(73, 215, 255);
+	background-size: contain;
+    height: 60px;
+    width:85%;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    position:relative;
+	list-style: none;
+	display: block;
+	margin:20px auto;
+}
+
+.flow-sub a{
+    height: 100%;
+    width: 100%;
+    color: #fefff7;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	text-decoration : none;
+	white-space: nowrap;
+    margin: 0;
+}
+
+.flow-sub a:hover{
+-webkit-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.flow-sub .section-name {
+    position: absolute; /* 相対的な位置に対して絶対的な位置指定 */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flow-sub .visit-count {
+    position: absolute; /* 相対的な位置に対して絶対的な位置指定 */
+    left: 90%;
+    transform: translateX(-90%);
+}
+
+
+.flow-sub a::after {
+    content: "▼"; /* 下向きの三角形のコンテンツを指定 */
+    color:#000000;
+    position: absolute; /* 相対的な位置に対して絶対的な位置指定 */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -22px; /* リンクの下に配置するための位置調整 */
+    font-size: 16px; /* 三角形のサイズを調整 */
+    pointer-events: none;
+}
+
+.flow-sub a.no-triangle::after {
+    display: none; /* 最後のリンクに対して三角形非表示 */
+}
