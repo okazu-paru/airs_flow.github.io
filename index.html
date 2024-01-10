@@ -1,25 +1,282 @@
 <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
- <meta http‐equiv="Content‐Type" content="text/html" charset="UTF-8" />
- <link rel="stylesheet" type="text/css" href="flow.css">></link>
-<title>Insert title here</title>
+      <meta http-equiv="Content‐Type"  content="text/html" charset="UTF-8"/>
+    <link href="flow.css"rel="stylesheet"></link>
+      <title>AIRS index demo</title>
 </head>
 <body>
-<script src="/js/flow.js"></script>
+<div class="main">
+    <header class="menu">
+    <h1 class="title"><img src="./AIRS.png"height="45"></h1>
+    <ul class="navi">
+     <li class="navi_item"><a target="mainPage"class="navi_item_link" href="index.html"><img src="./home.png"></a></li>
+     <li class="navi_item"><a class="navi_item_link"href="https://twitter.com/share? url=http://airs.sie.dendai.ac.jp/AIRS/top/&via=AIRS_Authoring&related=AIRS_Authoring&text=AIRS公式サイト TOP PAGE"
+rel="nofollow" target="_blank"><img src="./twitter.png"></a></li>
+     <li class="navi_item"><a
+class="navi_item_link" href="#"><img src="./menu.png"> <span
+class="caret"></span></a>
+      <ul class="sub_navi">
+       <li class="sub_navi_item_freeze"><a class="sub_navi_item_link_freeze" href="#">登録情報変更
+       </a></li>
+       <li class="sub_navi_item"><a target="mainPage" class="sub_navi_item_link" href="/question">よくある質問
+       </a></li>
+       <li class="sub_navi_item"><a target="mainPage" class="sub_navi_item_link" href="/contact" onclick="recordLinkClick('/contact')">問い合わせ
+</a></li>
+       <!-- <li class="sub_navi_item"><a class="sub_navi_item_link" href="#">ヘルプ</a></li> -->
+       <li
+class="sub_navi_item_freeze"><a class="sub_navi_item_link_freeze" href="#">ログアウト</a></li>
+      </ul>
+     </li>
+    </ul>
+    <div class="user_info">
+     
+    </div>
+    </header>
+    <div class="contentsflow">
+    <header class="conhed">
+    <h1 class="contitle">第一章　コンピュータの基本</h1>
+    </header>
+    <nav class="flow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.28 841.89">
+	<style>
+	#flow {
+  width: 100%;
+  
+}
 
-<li class="flow-sub">
-<a href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-0/a/index.html"onclick=setCookie2('1', 'true', 24*3600); ><span>1章概要</span><script>var visitCount= getCookie;(1)var backgroundColor=determineBackgroundColor(visitCount);       document.currentScript.parentElement.style.backgroundColor = backgroundColor; function determineBackgroundColor(visitCount) {                    if (visitCount!==0) {                 return 'rgb(73, 215, 73)';             } else {                 return'rgb(73, 215, 255)';             }}</script></a> 
-<a href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-1/b/index.html"onclick=setCookie2('2', 'true', 24*3600); ><span>データベース</span><script>var visitCount= getCookie;(2)var backgroundColor=determineBackgroundColor(visitCount);       document.currentScript.parentElement.style.backgroundColor = backgroundColor; function determineBackgroundColor(visitCount) {                    if (visitCount!==0) {                 return 'rgb(73, 215, 73)';             } else {                 return'rgb(73, 215, 255)';             }}</script></a> 
-<a href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-1/b/index.html"onclick=setCookie2('3', 'true', 24*3600); ><span>データベース</span><script>var visitCount= getCookie;(3)var backgroundColor=determineBackgroundColor(visitCount);       document.currentScript.parentElement.style.backgroundColor = backgroundColor; function determineBackgroundColor(visitCount) {                    if (visitCount!==0) {                 return 'rgb(73, 215, 73)';             } else {                 return'rgb(73, 215, 255)';             }}</script></a> 
-<a href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-2/b/index.html"onclick=setCookie2('4', 'true', 24*3600); ><span>3層スキーマ</span><script>var visitCount= getCookie;(4)var backgroundColor=determineBackgroundColor(visitCount);       document.currentScript.parentElement.style.backgroundColor = backgroundColor; function determineBackgroundColor(visitCount) {                    if (visitCount!==0) {                 return 'rgb(73, 215, 73)';             } else {                 return'rgb(73, 215, 255)';             }}</script></a> 
-<a href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-4/b/index.html"onclick=setCookie2('5', 'true', 24*3600); ><span>データの機密保護</span><script>var visitCount= getCookie;(5)var backgroundColor=determineBackgroundColor(visitCount);       document.currentScript.parentElement.style.backgroundColor = backgroundColor; function determineBackgroundColor(visitCount) {                    if (visitCount!==0) {                 return 'rgb(73, 215, 73)';             } else {                 return'rgb(73, 215, 255)';             }}</script></a> 
+.cls-1 {
+        font-size: 18.64px;
+      }
 
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: Meiryo, Meiryo;
+      }
 
-</li>
+      .cls-3 {
+        stroke: #040000;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
 
-<script>
-deleteTriangle();
-</script>
+      .cls-3, .cls-4 {
+        
+      }
 
+      .cls-4, .cls-5, .cls-6 {
+        stroke-width: 1px;
+        
+      }
+
+      .cls-5 {
+        fill: #040000;
+      }
+		
+
+      .cls-6 {
+        fill: #5dc4e8;
+      }
+
+      .cls-2 {
+        font-size: 18.64px;
+      }
+	
+ .flow-hover:hover path {
+    opacity: 0.5;
+    }
+  
+	</style>
+	<script>
+	var maxContentId = 12;
+	
+	document.addEventListener('DOMContentLoaded', function() {
+	    // applyColorFromCookieを実行する
+	    applyColorFromCookie();
+	});
+
+	// クリック時にクッキーに値を保存し、要素の色を変更する
+	function record(contentId) {
+	    setCookie2('externalLinkClicked_' + contentId, 'clicked', 80000);
+	    changeColor(contentId);
+	}
+
+	// クッキーから値を取得し、該当の要素の色を変更する
+	function applyColorFromCookie() {
+	    for (var i = 1; i <= maxContentId; i++) {
+	        var cookieValue = getCookie('externalLinkClicked_' + i);
+	        if (cookieValue === 'clicked') {
+	            changeColor(i);
+	        }
+	    }
+	}
+
+	// 要素の色を変更する関数
+	function changeColor(contentId) {
+	    var svgElement = document.getElementById('k' + contentId);
+	    var pathElement = svgElement.querySelector('path');
+	    if (pathElement) {
+	        pathElement.style.fill = '#49d749'; // 色変更
+	    }
+	}
+
+	function setCookie2(name, value, maxAgeInSeconds, path) {
+	    var expires = "";
+	    if (maxAgeInSeconds) {
+	        var date = new Date();
+	        date.setTime(date.getTime() + (maxAgeInSeconds * 1000));
+	        expires = "; max-age=" + maxAgeInSeconds;
+	    }
+	    document.cookie = name + "=" + value + expires + "; path=" + (path || "/");
+	}
+
+	function getCookie(name) {
+	    var value = "; " + document.cookie;
+	    var parts = value.split("; " + name + "=");
+	    if (parts.length === 2) return parts.pop().split(";").shift();
+	}
+	
+	var contentElements = document.querySelectorAll('.cValue');
+    contentElements.forEach(function(element) {
+        var contentId = element.id.split('-')[1];
+        var cookieValue = getCookie('externalLinkClicked_' + contentId);
+        if (cookieValue) {
+            element.textContent = cookieValue;
+        }
+    })
+	</script>
+
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-1/a/index.html" class="flow-hover"
+  onclick="record(1)">
+    <g id="k1">
+    <path class="cls-6" d="m444.7,56.66H139.85c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-1" transform="translate(139.89 82.39)">データベース　1</text>
+    <text class="cls-1" transform="translate(406.89 82.39)" id="cValue-1"> 
+    </text>
+  </g>
+  </a>
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-1/b/index.html" class="flow-hover"
+  onclick="record(2)">
+  <g id="k2">
+    <path class="cls-6" d="m444.7,105.74H139.85c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-1" transform="translate(139.89 131.83)">データベース　2</text>
+    <text class="cls-1" transform="translate(406.89 131.39)" id="cValue-2"> 
+    </text>
+  </g>
+  </a>
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-2/b/index.html" class="flow-hover"
+  onclick="record(3)">
+  <g id="k3">
+    <path class="cls-6" d="m444.7,154.82H139.85c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-1" transform="translate(139.89 181.27)"><tspan x="0" y="0">三層スキーマ</tspan></text>
+    <text class="cls-1" transform="translate(406.89 181.39)" id="cValue-3"> 
+    </text>
+  </g>
+  </a>
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-3/a/index.html" class="flow-hover"
+  onclick="record(4)">
+  <g id="k4">
+    <path class="cls-6" d="m444.7,203.9H139.85c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-2" transform="translate(141.05 230.7)"><tspan x="0" y="0">データベース管理システム　1</tspan></text>
+    <text class="cls-1" transform="translate(406.89 230.39)" id="cValue-4"> 
+    </text>
+  </g>
+  </a>
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-3/b/index.html" class="flow-hover"
+  onclick="record(5)">
+  <g id="k5">
+    <path class="cls-6" d="m444.7,252.98H139.85c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-1" transform="translate(139.89 280.14)"><tspan x="0" y="0">データベース管理システム　2</tspan></text>
+    <text class="cls-1" transform="translate(406.89 280.39)" id="cValue-5"> 
+    </text>
+  </g>
+  </a>
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-4/a/index.html" class="flow-hover"
+  onclick="record(6)">
+  <g id="k6">
+    <path class="cls-6" d="m444.7,302.06H139.85c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-1" transform="translate(139.89 329.58) scale(.97 1)"><tspan x="0" y="0">データの機密保護</tspan></text>
+    <text class="cls-1" transform="translate(406.89 329.39)" id="cValue-6"> 
+    </text>
+  </g>
+  </a>
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-5/a/index.html" class="flow-hover"
+  onclick="record(7)">
+  <g id="k7">
+    <path class="cls-6" d="m444.7,351.14H139.85c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-1" transform="translate(139.89 379.02)"><tspan x="0" y="0">同時実行制御　1</tspan></text>
+    <text class="cls-1" transform="translate(406.89 379.39)" id="cValue-7"> 
+    </text>
+  </g>
+  </a>
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-5/b/index.html" class="flow-hover"
+  onclick="record(8)">
+  <g id="k8">
+    <path class="cls-6" d="m444.63,400.22H139.78c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-1" transform="translate(139.84 428.45)"><tspan x="0" y="0">同時実行制御　2</tspan></text>
+    <text class="cls-1" transform="translate(406.89 428.39)" id="cValue-8"> 
+    </text>
+  </g>
+  </a>
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-6/a/index.html" class="flow-hover"
+  onclick="record(9)">
+  <g id="k9">
+    <path class="cls-6" d="m444.77,449.3H139.92c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-1" transform="translate(139.95 477.89)"><tspan x="0" y="0">障害回復</tspan></text>
+    <text class="cls-1" transform="translate(406.89 477.39)" id="cValue-9"> 
+    </text>
+  </g>
+  </a>
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-7/a/index.html" class="flow-hover"
+  onclick="record(10)">
+  <g id="k10">
+    <path class="cls-6" d="m444.77,498.38H139.92c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-1" transform="translate(139.84 527.33)"><tspan x="0" y="0">冗長データ制御</tspan></text>
+    <text class="cls-1" transform="translate(406.89 527.39)" id="cValue-10"> 
+    </text>
+  </g>
+  </a>
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-8/a/index.html" class="flow-hover"
+  onclick="record(11)">
+  <g id="k11">
+    <path class="cls-6" d="m444.77,547.46H139.92c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-1" transform="translate(139.95 576.77)"><tspan x="0" y="0">データベースの一貫性</tspan></text>
+    <text class="cls-1" transform="translate(406.89 576.39)" id="cValue-11"> 
+    </text>
+  </g>
+  </a>
+  <a xlink:href="http://airs2.sie.dendai.ac.jp/airs/db1/db1-9/a/index.html" class="flow-hover"
+  onclick="record(12)">
+  <g id="k12">
+    <path class="cls-6" d="m444.63,596.54H139.78c-12.07,0-21.85,6.92-21.85,15.46v10.54c0,8.54,9.78,15.46,21.85,15.46h304.85c12.07,0,21.85-6.92,21.85-15.46v-10.54c0-8.54-9.78-15.46-21.85-15.46Z"/>
+    <text class="cls-1" transform="translate(139.84 626.21)"><tspan x="0" y="0">データ独立性</tspan></text>
+    <text class="cls-1" transform="translate(406.89 626.39)" id="cValue-12"> 
+    </text>
+  </g>
+  </a>
+  <g id="line">
+    <line class="cls-3" x1="292.36" y1="588.92" x2="292.3" y2="596.54"/>
+    <line class="cls-3" x1="292.75" y1="539.83" x2="292.69" y2="547.46"/>
+    <line class="cls-3" x1="293.14" y1="490.76" x2="293.08" y2="498.37"/>
+    <line class="cls-3" x1="293.53" y1="441.67" x2="293.47" y2="449.3"/>
+    <line class="cls-3" x1="293.93" y1="392.6" x2="293.87" y2="400.21"/>
+    <line class="cls-3" x1="294.32" y1="343.52" x2="294.26" y2="351.14"/>
+    <line class="cls-3" x1="294.71" y1="294.43" x2="294.65" y2="302.05"/>
+    <line class="cls-3" x1="295.1" y1="245.35" x2="295.04" y2="252.98"/>
+    <line class="cls-3" x1="295.49" y1="196.27" x2="295.43" y2="203.89"/>
+    <line class="cls-3" x1="295.89" y1="146.39" x2="295.83" y2="154"/>
+    <line class="cls-3" x1="296.28" y1="98.12" x2="296.21" y2="105.74"/>
+    <g>
+      <line class="cls-3" x1="292.72" y1="653.05" x2="292.72" y2="638"/>
+      <path class="cls-5" d="m292.72,656.06c.53-1.42,1.43-3.18,2.38-4.27l-2.38.86-2.38-.86c.95,1.09,1.85,2.85,2.38,4.27Z"/>
+    </g>
+  </g>
+    </svg>
+    </nav>
+    <script>
+    
+
+		</script>
+    </div>
 </body>
 </html>
