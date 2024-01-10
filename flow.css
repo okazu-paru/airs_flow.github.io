@@ -54,3 +54,69 @@ nav.flow {
 .flow-sub a.no-triangle::after {
     display: none; /* 最後のリンクに対して三角形非表示 */
 }
+header.menu{
+	background: #2a2a72;
+	background-size: contain;
+    height: 60px;
+    position: relative;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	color: #888888;
+	display: block;
+	margin: 0;
+}
+
+h1.title{
+	display: inline-block;
+    height: 45px;
+    left: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    width: 360px;
+    margin: 0;
+}
+
+ul.navi{
+	list-style: none;
+    display: inline-block;
+    position: absolute;
+	margin: 0;
+	padding: 0 2.5px;
+    right: 210px;
+    top: 0;
+    white-space: nowrap;
+}
+
+li.navi_item{
+	display: inline-block;
+	list-style-type: none;
+
+	/*アニメーション*/
+	-webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+li.navi_item:hover {
+	background-color: #49d7ff;
+}
+
+a.navi_item_link {
+	color: #fefff7;
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+a.navi_item_link:hover {
+	color: #fefff7;
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+a.navi_item_link > img {
+	padding-top: 12.5px;
+	padding-bottom: 5px;
+	width: 35px;
+	height: 35px;
+}
